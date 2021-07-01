@@ -1,0 +1,40 @@
+<html>
+
+<body bgcolor=#a3cfb4>
+
+    <center>
+
+        <h1>  PREDICTION :  </h1>
+    
+    {%if data == "Excellent Purchase"%}
+    <h1>excellent purchase</h1>
+    <img src='static\excellent purchase.jpg'>
+
+    {%elif data == "Good Buy"%}
+    <h1>good buy</h1>
+    <img src='static\good buy.jpg'>
+
+    {%elif data == "Maybe"%}
+    <h1>risky buy</h1>
+    <img src='static\risk.jpg'>
+
+    {%else%}
+    <h1>Avoid</h1>
+    <img src='static\avoid.jpg'>
+    
+    {%endif%}
+
+        <br><br>
+    <a href='/'>go back to home page</a>
+
+    </center>
+
+</body>
+
+</html>
+
+
+
+
+
+

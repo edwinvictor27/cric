@@ -1,0 +1,52 @@
+<html>
+
+<body bgcolor=tan>p
+
+    <center>
+
+        <h1>  PREDICTION :  </h1>
+          <style type ="text/css">
+              body
+             {
+                  background-repeat:no-repeat;
+                  background-attachment:fixed;
+                  background-size:cover;
+                  background-image:url({{url_for('static',filename='nzl.jpg')}})
+             }
+          </style>
+    {%if data == "Excellent Purchase"%}
+    <h1>excellent purchase </h1>
+        <h1><marquee> "The player would be an excellent purchase for any franchise<br> since the player has performed exceptionally well in the past"</marquee></h1>
+    <img src='static\ep.jpg'>
+
+    {%elif data == "Good Buy"%}
+    <h1>good buy</h1>
+        <h1><marquee>"The player would be a good buy for any franchise <br> but needs to develop in certain aspects of his game"</marquee></h1>
+    <img src='static\gb.jpg'>
+
+    {%elif data == "Maybe"%}
+    <h1>risky buy</h1>
+        <h1><marquee>"The player would be a risky buy for any franchise <br> since the player has a mixed track record"</marquee></h1>
+    <img src='static\risk.jpg'>
+
+    {%else%}
+    <h1>Avoid</h1>
+        <h1><marquee>"The purchase of this player should be avoided"</marquee></h1>
+    <img src='static\avoid.jpg'>
+    
+    {%endif%}
+
+        <br><br>
+    <a href='/'>go back to home page</a>
+
+    </center>
+
+</body>
+
+</html>
+
+
+
+
+
+

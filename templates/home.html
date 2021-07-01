@@ -1,0 +1,58 @@
+<html xmlns="http://www.w3.org/1999/html">
+    <body bgcolor=steelblue>
+
+        <center>
+
+
+        <h1>Player Purchase Recommendation  </h1><br>
+        <style type = "text/css">
+             label
+             {
+                  width: 200px;
+                  display : inline-flex;
+             }
+             body
+             {
+                  background-repeat:no-repeat;
+                  background-attachment:fixed;
+                  background-size:cover;
+                  background-image:url({{url_for('static',filename='bat.jpg')}})
+             }
+            .form-wrapper
+            {
+                   position:absolute;
+                     width:400px;
+                     height:290px;
+                     top:30%;
+                     left:40%;
+                   background:white;
+                   padding:30px
+                   opacity: 0.5;
+            }
+        </style>
+
+        <div class ="container">
+            <div class="form-wrapper">
+                <h2><marquee> Enter The Details Of The Player </marquee></h2>
+                  <form method="POST", action="{{url_for('home')}}">
+                    <b>
+
+
+                      <label> Career batting Strike-rate: </label> <input type="text", name='a', placeholder="Enter The Strikerate"> <br><br>
+                      <label> Career batting average: </label> <input type="text", name='b', placeholder="Enter The batting avg"> <br><br>
+                      <label> Economy_Rate: </label> <input type="text", name='c', placeholder="Enter Economy Rate"> <br><br>
+                      <label> Balls per_wicket: </label> <input type="text", name='d', placeholder="Enter Balls_per Wicket"> <br><br>
+                      <label> Runs conceded per_wicket: </label> <input type="text", name='e', placeholder="Enter Runs conceded per wicket"> <br><br>
+                      <label> Age: </label> <input type="text", name='f', placeholder="enter Age"> <br><br><br>
+                    </b>
+                    <input type="submit" , value='predict!' >
+                  </form>
+            </div>
+       </div>
+
+
+        
+    </center>
+
+    </body>
+</html>
